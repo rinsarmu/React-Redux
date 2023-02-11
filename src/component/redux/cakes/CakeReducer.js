@@ -3,7 +3,7 @@ const initial = {
     numOfCake: 10
 }
 
-const reducer = (state= initial, action) =>{
+const CakeReducer = (state= initial, action) =>{
     switch(action.type){
         case BUY_CAKE:
             return {
@@ -13,4 +13,4 @@ const reducer = (state= initial, action) =>{
             default : return state
     }
 }
-export default reducer
+export default CakeReducer
